@@ -14,6 +14,10 @@ export class EmployeeService {
 
   constructor(private http : Http) { }
 // Posts the form inputs to create a new Employee
+/**
+ * 
+ * @param emp 
+ */
   postEmployee(emp :Employee) {
     var body = JSON.stringify(emp);
     var headerOptions = new Headers({'Content-Type': 'application/json'});
@@ -21,6 +25,11 @@ export class EmployeeService {
     return this.http.post('http://localhost:8000/api/employee',body,requestOptions).map(x =>x.json());
   }
 // Puts the form inputs to update an Employee
+/**
+ * 
+ * @param id 
+ * @param emp 
+ */
   putEmployee(id,emp) {
     var body = JSON.stringify(emp);
     var headerOptions = new Headers({'Content-Type': 'application/json'});
@@ -28,6 +37,9 @@ export class EmployeeService {
     return this.http.put('http://localhost:8000/api/employee',body,requestOptions).map(x =>x.json());
   }
 // Fetch the Employees using GET
+/**
+ * 
+ */
   getEmployeeList(){
     this.http.get('http://localhost:8000/api/employees')
     .map((data : Response) => {
@@ -37,6 +49,10 @@ export class EmployeeService {
     })
   }
 // Delets an employee
+/**
+ * 
+ * @param id 
+ */
   deleteEmployee(id :number){
     return this.http.delete('http://localhost:8000/api/employee/' + id).map(res => res.json());
   }

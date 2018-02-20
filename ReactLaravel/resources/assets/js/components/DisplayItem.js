@@ -18,6 +18,9 @@ class DisplayItem extends Component {
        })
      }
      // Function for looping and displaying each row
+     /**
+      * 
+      */
      tabRow(){
        if(this.state.items instanceof Array){
          return this.state.items.map(function(object, i){

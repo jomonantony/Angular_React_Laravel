@@ -4,6 +4,9 @@ import React, {Component} from 'react';
 import DisplayItem from './DisplayItem';
 import { Link, browserHistory } from 'react-router';
 // Component for create an employee
+/**
+ * 
+ */
 class CreateItem extends Component {
     constructor(props){
         super(props);
@@ -15,12 +18,21 @@ class CreateItem extends Component {
       }
 
 // Handle the on change in input fields
+/**
+ * 
+ * @param {*} input 
+ * @param {*} value 
+ */
       handleChange(input, value){
         var products = {};
         products[input] = value;
         this.setState(products)
         }
 // Handle the submit action
+/**
+ * 
+ * @param {*} e 
+ */
       handleSubmit(e){
         e.preventDefault();
         let uri = 'http://localhost:8000/api/employee';

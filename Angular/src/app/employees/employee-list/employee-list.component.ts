@@ -15,11 +15,17 @@ export class EmployeeListComponent implements OnInit {
   ngOnInit() {
     this.employeeService.getEmployeeList();
   }
-
+/**
+ * 
+ * @param emp 
+ */
   showForEdit(emp : Employee) {
     this.employeeService.selectedEmployee = Object.assign({},emp);
   }
-
+/**
+ * 
+ * @param id 
+ */
   onDelete(id : number) {
     if(confirm("Are you sure?") == true) {
       this.employeeService.deleteEmployee(id)

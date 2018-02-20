@@ -7,6 +7,10 @@ class TableRow extends Component {
         this.handleDelete = this.handleDelete.bind(this);
     }
 // To call the delete API function
+/**
+ * 
+ * @param {*} event 
+ */
     handleDelete(event) {
       event.preventDefault();
       let uri = `http://localhost:8000/api/employee/${this.props.obj.id}`;

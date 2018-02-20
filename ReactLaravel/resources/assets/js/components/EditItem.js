@@ -23,12 +23,21 @@ class EditItem extends Component {
       }
 
 // Handle the onchange in input fields
+/**
+ * 
+ * @param {*} input 
+ * @param {*} value 
+ */
       handleChange(input, value){
         var products = {};
         products[input] = value;
         this.setState(products)
         }
 // Handle the submit action
+/**
+ * 
+ * @param {*} e 
+ */
       handleSubmit(e){
         e.preventDefault();
         let uri = 'http://localhost:8000/api/employee';

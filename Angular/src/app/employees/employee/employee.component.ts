@@ -27,7 +27,10 @@ export class EmployeeComponent implements OnInit {
       Office : ''
     }
   }
-
+/**
+ * 
+ * @param form 
+ */
   onSubmit(form :NgForm) {
     if(form.value.id == null) {
       this.employeeService.postEmployee(form.value)
