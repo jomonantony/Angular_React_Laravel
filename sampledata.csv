@@ -1,0 +1,6 @@
+id,FirstName,LastName,EmpCode,Position,Office,created_at,updated_at
+20,Jomon,Antony,ABCD1,Developer,Oscar,"2018-01-26 04:26:01","2018-02-20 05:35:27"
+38,Sneha,Balan,ABCD2,Tester,Oscar,"2018-02-20 05:35:56","2018-02-20 05:35:56"
+39,Shamsheer,K,ABCD3,Developer,Oscar,"2018-02-20 05:36:25","2018-02-20 05:36:25"
+40,Test,Test,Test,Test,Test,"2018-02-20 05:37:23","2018-02-20 05:37:23"
+41,Test,2,1,Test,Test,"2018-02-20 05:37:50","2018-02-20 05:37:50"
